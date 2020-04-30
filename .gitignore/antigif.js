@@ -3,6 +3,13 @@ const client = new Discord.Client();
 
 client.login(process.env.TOKEN)
 
+client.on('ready', () => {
+  client.user.setPresence({ activity: { name: 'Bot développé par IkaRio' }, status: 'available' })
+.then(console.log)
+.catch(console.error);
+      ;}
+  );
+
 client.on('message', message => {
     if(message.content.includes("tenor")) {
       message.delete();
