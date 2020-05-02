@@ -11,13 +11,13 @@ client.on('ready', () => {
   );
 
 client.on('message', message => {
-    if(message.content.includes("tenor")) {
+    if(message.content.includes("tenor.com/")) {
       message.delete();
-      message.channel.send("__**Les gifs ne sont pas autorisés sur ce serveur.**__");
+      message.reply("__**les gifs ne sont pas autorisés sur ce serveur.**__");
 }});
 
 client.on('message', message => {
-    if(message.content.includes("giphy")) {
+    if(message.content.includes("giphy.com/")) {
       message.delete();
-      message.channel.send("__**Les gifs ne sont pas autorisés sur ce serveur.**__");
+      message.reply("__**Les gifs ne sont pas autorisés sur ce serveur.**__");
 }});
