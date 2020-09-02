@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.login(process.env.TOKEN)
+client.login("") //PLACE YOUR TOKEN HERE → "<BOT TOKEN>"
 
 client.on('ready', () => {
   client.user.setPresence({ activity: { name: 'Bot développé par IkaRio' }, status: 'available' })
