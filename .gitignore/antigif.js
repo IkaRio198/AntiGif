@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.login("") //PLACE YOUR TOKEN HERE → "<BOT TOKEN>"
 
 client.on('ready', () => {
-  client.user.setPresence({ activity: { name: 'Bot développé par IkaRio' }, status: 'available' })
+  client.user.setPresence({ activity: { name: 'Bloquer les gifs | Dev by IkaRio' }, status: 'available' })
 .then(console.log)
 .catch(console.error);
       ;}
