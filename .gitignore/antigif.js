@@ -14,10 +14,12 @@ client.on('message', message => {
     if(message.content.includes("tenor.com/")) {
       message.delete();
       message.reply("__**les gifs ne sont pas autorisés sur ce serveur.**__");
+      console.log(`  [-] ${Date()} || Un gif venant de tenor.com envoyé par ${message.author.username} dans ${message.channel.name} du serveur ${message.guild.name} a été supprimé avec succès par l'application Antigif.`);
 }});
 
 client.on('message', message => {
     if(message.content.includes("giphy.com/")) {
       message.delete();
       message.reply("__**Les gifs ne sont pas autorisés sur ce serveur.**__");
+      console.log(`  [-] ${Date()} || Un gif venant de giphy.com envoyé par ${message.author.username} dans ${message.channel.name} du serveur ${message.guild.name} a été supprimé avec succès par l'application Antigif.`);
 }});
