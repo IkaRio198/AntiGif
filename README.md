@@ -1,5 +1,5 @@
 # AntiGif
 
-AntiGif est un bot permettant de bloquer tous les gifs (du moins en lien) sur votre serveur Discord
+AntiGif est un bot permettant de bloquer la quasi totalité des links gifs (90% environ) sur votre serveur Discord
 
 Développeur : IkaRio
